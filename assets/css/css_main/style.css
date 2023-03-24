@@ -1,0 +1,274 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800);
+@import "../reset.css";
+
+html, body {
+    background-color: #18191A;
+    font-family: Open Sans,sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 638px;
+    height: 590px;
+    background: #2d3844;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.players {
+    width: 100%;
+    height: 188px;
+}
+
+section .p1 {
+    position: absolute;
+    top: 0;
+}
+
+section .p2 {
+    position: absolute;
+    bottom: 0;
+}
+
+.name-wrapper {
+    width: 100%;
+    height: 35px;
+    background: #364250;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 0 15px;
+    align-items: center;
+    border-bottom: 1px solid #3e4b59;
+}
+
+.name-wrapper a {
+    color: #87A3BF;
+}
+
+a img {
+    margin: 0 5px 0 0;
+    width: 25px;
+    height: 20px;
+}
+
+.players-ph {
+    background: #2d3844;
+    display: flex;
+    align-items: center;
+}
+
+.players-ph .ph {
+    padding: 5px 3px;
+    color: #6d767e;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.ph p {
+    margin: 2px 0 0 0;
+    height: 20px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+p img {
+    width: 18px;
+    height: 12px;
+    margin: 0px 5px 0 0;
+    border: 1px solid #000;
+}
+
+.ranking {
+    font-size: 12px;
+    color: #a0a0a0;
+}
+
+.rank-hover {
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+}
+
+.rank-hover:hover {
+    background-color: #434d55;
+}
+
+.wrld {
+    color: #6d7780;
+    font-size: 12px;
+}
+
+.lineups {
+    width: 100%;
+    height: 220px;
+    background-color: #232a30;
+    display: flex;
+    justify-content: space-between;
+}
+
+.more {
+    text-shadow: 0px 0px 10px #c6ddf5;
+    font-weight: 700;
+}
+
+.lineups .block {
+    width: 33%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.cloud {
+    position: absolute;
+    width: 200px;
+    filter: blur(2px);
+    left: -30px;
+    opacity: 0.5;
+}
+
+.mouz img {
+    width: 200px;
+    height: 20  0px;
+}
+
+.mouz {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    filter: blur(1px);
+    right: -30px;
+    top: -30px;
+    opacity: 0.5;
+}
+
+.tab-ph {
+    object-fit: cover;
+    position: absolute;
+    z-index: 5;
+    bottom: 3px;
+    width: 200px;
+    height: 200px;
+}
+
+.def {
+    background-color: #435971;
+}
+
+.tab-ph-2 {
+    object-fit: cover;
+    position: absolute;
+    z-index: 5;
+    bottom: 3px;
+    width: 200px;
+    height: 200px;
+}
+
+.animation {
+    left: 0;
+    animation: anim 0.4s ease-in-out;
+}
+
+@keyframes anim {
+    0% {
+        opacity: 0;
+        left: -20px;
+    } 100% {
+        opacity: 1;
+        left: 0;
+    }
+};
+
+.head-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.head-text strong {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-shadow: 0px 0px 2px #D1E3F5;
+    color: #D1E3F5;
+    font-size: 12px;
+    margin: 10px 0 0 0;
+    letter-spacing: 1px;
+}
+
+.head-text small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #969696;
+    font-size: 8px;
+    height: 20px;
+}
+
+.text-stats .textSt {
+    height: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 5px;
+}
+
+.textSt .text-m {
+    font-size: 9px;
+    color: #b6b5b5;
+}
+
+.textSt .text-b {
+    font-size: 12px;
+    color: #dddddd;
+    display: flex;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-wrapper a {
+    margin: 2px 0 0 0;
+    font-size: 11px;
+    color: #cacaca;
+    padding: 2px 4px;
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+    transition: background-color .4s;
+}
+
+.btn-wrapper a:hover {
+    background-color: #fff;
+    color: #575555;
+}
+
+.name-wrapper-tab {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pl-name-tab {
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 5;
+    color: #fff;
+}
